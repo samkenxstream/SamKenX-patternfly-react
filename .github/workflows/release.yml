@@ -298,7 +298,7 @@ jobs:
         run: yarn build && yarn build:umd
         if: steps.dist.outputs.cache-hit != 'true'
       - name: Download demo app
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: demo-app
           path: packages/react-integration/demo-app-ts/public
